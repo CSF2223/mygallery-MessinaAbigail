@@ -18,13 +18,15 @@ html {
 }
 
 header {
-    margin: 0 4rem;
+    color: #FEF1E6;
+    margin: 4rem;
     letter-spacing: 0.8rem;
     text-align: center;
-    border-bottom: 1px solid #826F66;
-    border-right: 1px solid #826F66;
-    border-left: 1px solid #826F66;
-    padding: 0.5rem;
+    border-top: 10px solid #FFB085;
+    border-bottom: 10px solid #FFB085;
+    border-right: 10px solid #FFB085;
+    border-left: 10px solid #FFB085;
+    padding: 1rem;
     box-shadow: 4px 4px 5px rgba(0, 0, 0, 0.4);
     text-transform: uppercase;
     font-size: 1.1rem;
@@ -33,7 +35,8 @@ header {
 body {
     background-color: #F9D5A7;
     color: #FEF1E6;
-    font-family: 'Open Sans', Playfair-Display;
+    font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
     margin:0;
 }
 
@@ -43,4 +46,50 @@ cite {
 
 p {
     font-size: 1.2rem;
+}
+
+.imageCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 7rem 4rem;
+}
+
+.imageCard img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+.imageCard a {
+    text-decoration: none;
+    color: #FF884B;
+}
+
+.cardText {
+    color: #FF884B;
+    text-align: center;
+    padding: 2rem;
+    border-radius: 40px;
+    margin-top: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px rgba(0, 0, 0, 0.19);
+}
+
+@media (min-width: 768px) {
+    header {
+        font-size: 1.6rem;
+    }
+    
+.gallery{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    
+    .imageCard {
+        max-width: 28%;
+    }
 }
